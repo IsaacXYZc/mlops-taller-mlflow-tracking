@@ -1,0 +1,19 @@
+Vamos a desglosar cada uno de estos puntos, explicando qué significa obtener un F1-score de 0.90, por qué una red neuronal podría tener mejor recall que regresión logística, y qué significa el activation=relu en una red neuronal.
+
+**1. ¿Qué significa obtener un F1-score de 0.90?**
+
+Un F1-score (F1-score) es una métrica de evaluación que combina la precisión y el recall.  En términos sencillos, mide qué tan bien tu modelo predice los resultados correctos en comparación con todos los resultados posibles.  Un F1-score de 0.90 significa que el modelo está haciendo un trabajo *excelente*.  Esto indica que:
+
+* **Precisión:** El modelo está prediciendo correctamente la mayoría de los casos.
+* **Recall:** El modelo está identificando la mayoría de los casos positivos (los casos que realmente son positivos) en comparación con todos los casos reales.
+
+Un F1-score de 0.90 es *muy bueno* en este sentido.  Significa que el modelo está superando las expectativas en términos de precisión y recall.  En la práctica, un buen valor de F1-score suele estar entre 0.9 y 0.95.  Un valor de 0.90 es generalmente considerado *muy bueno*.
+
+**2. ¿Por qué una red neuronal podría tener mejor recall que regresión logística?**
+
+La regresión logística es un modelo de clasificación *lineal*.  Esto significa que predice un valor continuo (por ejemplo, la probabilidad de que un cliente compre un producto).  En este caso, el objetivo es predecir una probabilidad entre 0 y 1.
+
+Las redes neuronales, por otro lado, son *modelos no lineales*.  Pueden aprender relaciones mucho más complejas entre las características de entrada y la salida.  En muchos casos, las redes neuronales pueden capturar patrones más sofisticados que la regresión logística, lo que resulta en un mejor recall.  Aquí hay algunos factores que contribuyen a esto:
+
+* **Complejidad del problema:** Para problemas más complejos, donde las relaciones entre las características son intrincadas, las redes neuronales pueden ser más efectivas.
+* **Características no lineales:** Las redes neuronales pueden aprender a extraer características importantes que la regresión logística no
